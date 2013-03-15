@@ -8,6 +8,18 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     <display-name>Spring PetClinic</display-name>
     <description>Spring PetClinic sample application</description>
 
+    <!-- Monitoring: Aggregate identifiers in http requests -->
+    <context-param>
+        <param-name>javamelody.http-transform-pattern</param-name>
+        <param-value>\d+</param-value>
+    </context-param>
+    <!-- Monitoring: enable or disable all
+    <context-param>
+        <param-name>javamelody.disabled</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    -->
+
     <context-param>
         <param-name>spring.profiles.active</param-name>
         <param-value>jpa</param-value>
@@ -24,7 +36,8 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring/business-config.xml, classpath:spring/tools-config.xml</param-value>
+        <!-- Monitoring of sql requests, and of spring services with tools-config.xml -->
+        <param-value>classpath:net/bull/javamelody/monitoring-spring.xml, classpath:spring/business-config.xml, classpath:spring/tools-config.xml</param-value>
     </context-param>
 
     <listener>
