@@ -34,7 +34,7 @@ import java.util.*;
  */
 @Entity
 @Table(name = "pets")
-@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+//@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Pet extends NamedEntity {
 
     @Column(name = "birth_date")

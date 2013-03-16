@@ -35,7 +35,7 @@ import java.util.*;
  */
 @Entity
 @Table(name = "owners")
-@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+//@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Owner extends Person {
     @Column(name = "address")
     @NotEmpty

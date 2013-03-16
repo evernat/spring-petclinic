@@ -30,7 +30,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "visits")
-@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+//@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Visit extends BaseEntity {
 
     /**
