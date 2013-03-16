@@ -23,7 +23,7 @@
     <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
           p:driverClassName="${jdbc.driverClassName}" p:url="${jdbc.url}"
           p:username="${jdbc.username}" p:password="${jdbc.password}"
-          p:maxActive="8" p:initialSize="8"/>
+          p:maxActive="32" p:initialSize="8"/>
 
     <!-- JNDI DataSource for JEE environments -->
     <!--
