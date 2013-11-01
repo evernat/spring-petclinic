@@ -68,7 +68,7 @@
         <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
         <maven-surefire-plugin.version>2.13</maven-surefire-plugin.version>
         <maven-taglist-plugin.version>2.4</maven-taglist-plugin.version>
-        <maven.version.range>[2.2.1,3.1.0)</maven.version.range>
+        <maven.version.range>[2.2.1,3.2.0)</maven.version.range>
         <maven-war-plugin.version>2.3</maven-war-plugin.version>
         <maven-tomcat-plugin.version>2.1</maven-tomcat-plugin.version>
         <mysql.version>5.1.23</mysql.version>
@@ -81,7 +81,7 @@
         <dependency>
             <groupId>net.bull.javamelody</groupId>
             <artifactId>javamelody-core</artifactId>
-            <version>1.44.0-SNAPSHOT</version>
+            <version>1.48.0-SNAPSHOT</version>
         </dependency>
         <!-- Spring -->
         <dependency>
